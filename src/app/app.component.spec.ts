@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -14,16 +15,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'policy-management-system' title`, () => {
+  it(`should have the 'insurmi' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('policy-management-system');
+    expect(app.title).toEqual('insurmi');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, policy-management-system');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, insurmi');
   });
 });
